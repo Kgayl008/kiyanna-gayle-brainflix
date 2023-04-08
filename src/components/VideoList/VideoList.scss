@@ -1,0 +1,52 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/variables' as *;
+
+.videolist__video{
+    height: 3.75rem;
+    width: 6.25rem;
+    border-radius: 4px;
+}
+.videolist__container{
+    display: flex;
+    flex-direction: row;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+.videolist__title{
+    font-size: .8125rem;
+    line-height: 1.125rem;
+    font-weight: 700;
+}
+.videolist__channel{
+    font-size: .8125rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+}
+.videolist__text{
+    padding-left: 1rem;
+}
+.videolist__header{
+    font-size: .75rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    color: $Silver;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+
+// .videolist{
+// &__video{
+//     height: 3.75rem;
+//     width: 6.25rem;
+//     border-radius: 4px;
+// &__container{
+//     display: flex;
+//     flex-direction: row-reverse;
+//     padding-left: 1rem;
+//     padding-right: 1rem;
+//     padding-bottom: 1rem;
+// }
+// }}

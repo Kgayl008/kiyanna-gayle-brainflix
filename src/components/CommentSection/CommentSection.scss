@@ -1,0 +1,38 @@
+@use '../../styles/partials/variables' as *;
+//border-bottom: 1px solid $Mercury;
+.comment__avatar{
+    border-radius: 50%;
+    height: 2.25rem;
+    width: 2.25rem;
+    background-color: $Mercury;
+    margin: 0;
+}
+.comment__container{
+    display: flex;
+    border-bottom: 1px solid $Mercury;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: .8125rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+}
+.comment__section{
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+}
+.comment__name-date-container{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+.test{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.comment__date{
+    color: $Silver;
+}
+.comment__name{
+    font-weight: 700;
+}
