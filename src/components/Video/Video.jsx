@@ -1,4 +1,4 @@
-import Data from '../../data/video-details.json'
+// import Data from '../../data/video-details.json'
 import './Video.scss';
 import Heart from '../../assets/Icons/likes.svg';
 import Views from '../../assets/Icons/views.svg';
