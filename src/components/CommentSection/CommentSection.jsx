@@ -7,7 +7,7 @@ const CommentSection = ({ selectedVideo }) => {
   <div>
   { comments.map(comment => {
     return(
-      <div className='test'>
+      <div className='comment__area'>
       <div className='comment__container'>
         <div>
           <div className='comment__avatar'></div>
