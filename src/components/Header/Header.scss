@@ -52,7 +52,7 @@
                 margin-left: 1rem;
             }
     }
-}
+
 .nav__input{
     display: flex;
     justify-content: space-between;
@@ -80,34 +80,4 @@
     width: 81%;
 &:focus {
     border: 2px solid $BrainFlix-Blue;
-<<<<<<< Updated upstream
 }}
-=======
-}
-.icon{
-&__upload{
-    position: absolute;
-    left: 2%;
-}
-&__search{
-    position: absolute;
-    left: 2%;
-}}
-.new__nav-image{
-    display: none;
-        @include tablet{
-            border-radius: 50%;
-            height: 2.5rem;
-            width: 2.5rem;
-            object-fit: cover;
-            display: block;
-            margin-left: 1rem;
-        }
-}
-.header__container{
-    @include tablet{
-        display: flex;
-        align-items: center;
-    }
-}
->>>>>>> Stashed changes
