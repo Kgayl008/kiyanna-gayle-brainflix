@@ -1,5 +1,5 @@
 import './App.css';
-import Header from './components/Header/Header';
+import Header from './components/HeaderSection/HeaderSection';
 import VideoList from './components/VideoList/VideoList';
 import Video from './components/Video/Video';
 import videoDetailsData from './data/video-details.json';
