@@ -10,15 +10,20 @@ const Header = () => {
             <div className='nav__logo'>
                 <img src={BrainFlixLogo} alt="BrainFlix Logo"/>
             </div>
-            <div className='nav__input'>
-                <input type="text" placeholder="Search" className='nav__search-bar'/>
-                <img src={AvatarImage} alt="" className='nav__image'/>
-            </div>
-            <div>
-                <button className='nav__btn'>
-                    <img src={UploadIcon} alt="Upload icon" className='icon__upload'/>
-                    <span>UPLOAD</span>
-                </button>
+            <div className='new__nav'>
+                <div className='nav__input'>
+                    <input type="text" placeholder="Search" className='nav__search-bar'/>
+                    <img src={AvatarImage} alt="" className='nav__image'/>
+                </div>
+                <div>
+                    <button className='nav__btn'>
+                        <img src={UploadIcon} alt="Upload icon" className='icon__upload'/>
+                        <span>UPLOAD</span>
+                    </button>
+                </div>
+                <div>
+                    <img src={AvatarImage} alt="Avater icon" className='new__nav-image'/>
+                </div>
             </div>
         </nav>
     )
