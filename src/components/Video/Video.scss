@@ -28,7 +28,13 @@
     line-height: 1.125rem;
     font-weight: 400;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     
+=======
+    @include tablet{
+        padding-right: 0;
+    }
+>>>>>>> Stashed changes
 =======
     @include tablet{
         padding-right: 0;

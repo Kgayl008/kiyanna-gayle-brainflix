@@ -7,6 +7,9 @@ import AvatarImage from '../../assets/Images/Mohan-muruge.jpg';
 =======
 import UploadIcon from '../../assets/Icons/upload.svg';
 import SearchIcon from '../../assets/Icons/search.svg';
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 const Header = () => {
