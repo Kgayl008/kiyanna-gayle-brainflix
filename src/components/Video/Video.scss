@@ -27,7 +27,13 @@
     font-size: .8125rem;
     line-height: 1.125rem;
     font-weight: 400;
+<<<<<<< Updated upstream
     
+=======
+    @include tablet{
+        padding-right: 0;
+    }
+>>>>>>> Stashed changes
 }
 .video__description{
     font-size: .8125rem;
@@ -40,9 +46,15 @@
     display: flex;
     padding-bottom: 1rem;
     justify-content: space-between;
+        @include tablet{
+            margin-right: 1.5rem;
+        }
 }
 .video__stats{
     padding-bottom: 1rem;
+    @include tablet{
+        margin-right: 1.5rem;
+    }
 }
 .video__channel{
     font-weight: 700;
