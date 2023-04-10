@@ -8,7 +8,7 @@ import videos from './data/videos.json';
 import { useState } from 'react';
 import CommentSection from './components/CommentSection/CommentSection';
 
-
+//onClick={() => {handle}()}
 
 function App() {
 
