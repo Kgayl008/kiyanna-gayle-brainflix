@@ -1,8 +1,13 @@
 @use '../src/styles/partials/variables' as *;
 @use '../src/styles/partials/mixins' as *;
 
-.test{
+.section{
     @include desktop{
-    background-color: pink;
+    display: flex;
+    }
+}
+.section__comment{
+    @include desktop{
+        border-right: 1px solid $Mercury;
     }
 }

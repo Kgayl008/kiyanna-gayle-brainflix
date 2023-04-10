@@ -10,179 +10,180 @@
         @include desktop{
             height: 92vh;
         }
-}
-.hero__title{
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: 700;
-    border-bottom: 1px solid $Mercury;
-    color: $BrainFlix-Black;
-        @include tablet{
-            border-bottom: none;
-            font-family: 'Avenir Bold';
-            padding-top: 2.25rem;
-            padding-bottom: 1.5rem;
-            font-size: 2.0625rem;
-            line-height: 2.75rem;
-        }
-}
-.container{
-    padding-left: 1rem;
-    padding-right: 1rem;
-        @include tablet{
-            padding-left: 1.5rem;
-            padding-right: 1.5rem;
-        }
-}
-.video__stats-container{
-    display: flex;
-    justify-content: space-between;
-    color: $Silver;
-    border-bottom: 1px solid $Mercury;
-    padding-top: 1rem;
-    padding-right: 3rem;
-    font-size: .8125rem;
-    line-height: 1.125rem;
-    font-weight: 400;
-    @include tablet{
-        padding: 0;
     }
-}
-.video__description{
-    font-size: .8125rem;
-    line-height: 1.125rem;
-    font-weight: 400;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-        @include tablet{
-            font-size: .875rem;
-            line-height: 1.375rem;
-        }
-    }
-.video__box{
-    display: flex;
-    padding-bottom: 1rem;
-    justify-content: space-between;
-        @include tablet{
-            margin-right: 1.5rem;
-        }
-}
-.video__stats{
-    padding-bottom: 1rem;
-    @include tablet{
-        margin-right: 1.5rem;
-    }
-}
-.video__channel{
-    font-weight: 700;
-    color: $BrainFlix-Black;
-    font-family: 'Avenir Bold';
-}
-.comment__avatar{
-    border-radius: 50%;
-    height: 2.25rem;
-    width: 2.25rem;
-    object-fit: cover;
-    margin-top: 1.3125rem;
-        @include tablet{
-            height: 2.5rem !important;
-            width: 2.5rem !important;
-        }
-}
-.comment__container{
-    display: flex;
-    justify-content: space-between;
-        @include tablet{
-            align-items: center;
-        }
-}
-.box{
-    &__comment-input{
-        height: 12vh;
-        width: 100%;
-        background-color: $Alabaster;
-        border-radius: 0.25rem;
-        border: $Mercury solid .0625rem;
-            @include tablet{
-                height: 2.5rem;
-            }
-    }
-    &__comment-input:focus {
-    outline: none;
-    border: .0625rem solid $BrainFlix-DarkBlack;
-    }
-}
-.comment__button{
-    background-color: $BrainFlix-Blue;
-    color: $White;
-    height: 2.5rem;
-    border-radius: .25rem;
-    width: 100%;
-    border: transparent;
-    color: #FFFFFF;
-    font-size: 0.8125rem;
-    line-height: 1.25rem;
-    font-weight: 700;
-    margin-top: 1rem;
-    position: relative;
-        @include tablet{
-            width: 9.375rem;
-            height: 2.5rem;
-            margin-left: 24px;
-        }
-}
-.comment__button:hover{
-    background-color: $BrainFlix-DarkBlue;
-}
-.comment__subtitle{
-    font-size: 0.75rem;
-    line-height: 1.25rem;
-    font-weight: 700;
-    color: #AFAFAF;
-}
-.comment__image{
-    width: 27%;
-        @include tablet{
-            width: 9%;
-            margin-top: 1.375rem;
-        }
-}
-.video__comments{
-    font-weight: 700;
-    color: $BrainFlix-Black;
-    font-size: .8125rem;
-    line-height: 1.125rem;
-    padding-bottom: 1rem;
-    font-family: 'Avenir Bold';
-}
-.video__container-left{
-    @include tablet{
-        display: flex;
-    }
-}
-.video__container-right{
-    @include tablet{
-        display: flex;
-    }
-}
-.icon{
-    margin-right: .5rem;
-}
-.comment__form{
-    @include tablet{
-        display: flex;
-        align-items: center;
-        width: 90%;
-    }
-}
-.icon__add-comment{
-    position: absolute;
-    left: 3%;
-}
-.box__comment{
-    @include tablet{
-        width: 90%;
-    }
-}
+// }
+// .hero__title{
+//     padding-top: 1.5rem;
+//     padding-bottom: 1rem;
+//     font-size: 1.5rem;
+//     line-height: 2rem;
+//     font-weight: 700;
+//     border-bottom: 1px solid $Mercury;
+//     color: $BrainFlix-Black;
+//         @include tablet{
+//             border-bottom: none;
+//             font-family: 'Avenir Bold';
+//             padding-top: 2.25rem;
+//             padding-bottom: 1.5rem;
+//             font-size: 2.0625rem;
+//             line-height: 2.75rem;
+//         }
+// }
+// .container{
+//     padding-left: 1rem;
+//     padding-right: 1rem;
+//         @include tablet{
+//             padding-left: 1.5rem;
+//             padding-right: 1.5rem;
+//         }
+// }
+// .video__stats-container{
+//     display: flex;
+//     justify-content: space-between;
+//     color: $Silver;
+//     border-bottom: 1px solid $Mercury;
+//     padding-top: 1rem;
+//     padding-right: 3rem;
+//     font-size: .8125rem;
+//     line-height: 1.125rem;
+//     font-weight: 400;
+//     @include tablet{
+//         padding: 0;
+//     }
+// }
+// .video__description{
+//     font-size: .8125rem;
+//     line-height: 1.125rem;
+//     font-weight: 400;
+//     padding-top: 1rem;
+//     padding-bottom: 1rem;
+//         @include tablet{
+//             font-size: .875rem;
+//             line-height: 1.375rem;
+//         }
+//     }
+// .video__box{
+//     display: flex;
+//     padding-bottom: 1rem;
+//     justify-content: space-between;
+//         @include tablet{
+//             margin-right: 1.5rem;
+//         }
+// }
+// .video__stats{
+//     padding-bottom: 1rem;
+//     @include tablet{
+//         margin-right: 1.5rem;
+//     }
+// }
+// .video__channel{
+//     font-weight: 700;
+//     color: $BrainFlix-Black;
+//     font-family: 'Avenir Bold';
+// }
+// .comment__avatar{
+//     border-radius: 50%;
+//     height: 2.25rem;
+//     width: 2.25rem;
+//     object-fit: cover;
+//     margin-top: 1.3125rem;
+//         @include tablet{
+//             height: 2.5rem !important;
+//             width: 2.5rem !important;
+//         }
+// }
+// .comment__container{
+//     display: flex;
+//     justify-content: space-between;
+//         @include tablet{
+//             align-items: center;
+//         }
+// }
+// .box{
+//     &__comment-input{
+//         height: 12vh;
+//         width: 100%;
+//         background-color: $Alabaster;
+//         border-radius: 0.25rem;
+//         border: $Mercury solid .0625rem;
+//             @include tablet{
+//                 height: 2.5rem;
+//             }
+//     }
+//     &__comment-input:focus {
+//     outline: none;
+//     border: .0625rem solid $BrainFlix-DarkBlack;
+//     }
+// }
+// .comment__button{
+//     background-color: $BrainFlix-Blue;
+//     color: $White;
+//     height: 2.5rem;
+//     border-radius: .25rem;
+//     width: 100%;
+//     border: transparent;
+//     color: #FFFFFF;
+//     font-size: 0.8125rem;
+//     line-height: 1.25rem;
+//     font-weight: 700;
+//     margin-top: 1rem;
+//     position: relative;
+//         @include tablet{
+//             width: 9.375rem;
+//             height: 2.5rem;
+//             margin-left: 24px;
+//         }
+// }
+// .comment__button:hover{
+//     background-color: $BrainFlix-DarkBlue;
+// }
+// .comment__subtitle{
+//     font-size: 0.75rem;
+//     line-height: 1.25rem;
+//     font-weight: 700;
+//     color: #AFAFAF;
+// }
+// .comment__image{
+//     width: 27%;
+//         @include tablet{
+//             width: 9%;
+//             margin-top: 1.375rem;
+//         }
+// }
+// .video__comments{
+//     font-weight: 700;
+//     color: $BrainFlix-Black;
+//     font-size: .8125rem;
+//     line-height: 1.125rem;
+//     padding-bottom: 1rem;
+//     font-family: 'Avenir Bold';
+// }
+// .video__container-left{
+//     @include tablet{
+//         display: flex;
+//     }
+// }
+// .video__container-right{
+//     @include tablet{
+//         display: flex;
+//     }
+// }
+// .icon{
+//     margin-right: .5rem;
+// }
+// .comment__form{
+//     @include tablet{
+//         display: flex;
+//         align-items: center;
+//         width: 90%;
+//     }
+// }
+// .icon__add-comment{
+//     position: absolute;
+//     left: 3%;
+// }
+// .box__comment{
+//     @include tablet{
+//         width: 90%;
+//     }
+// }
