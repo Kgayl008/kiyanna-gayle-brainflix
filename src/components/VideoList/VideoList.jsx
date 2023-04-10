@@ -3,7 +3,7 @@ import './VideoList.scss'
 
 const VideoList = ({clickHandler, videos}) => {
     return(
-        <div>
+        <div className='videolist__section'>
         <p className='videolist__header'>NEXT VIDEOS</p>
         { Data.map(videos => {
             return(

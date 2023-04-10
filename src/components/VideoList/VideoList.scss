@@ -43,19 +43,10 @@
             padding: 1.5rem;
         }
 }
+.videolist__section{
+    @include tablet{
+        width: 42%;
+    }
+}
 
 
-
-// .videolist{
-// &__video{
-//     height: 3.75rem;
-//     width: 6.25rem;
-//     border-radius: 4px;
-// &__container{
-//     display: flex;
-//     flex-direction: row-reverse;
-//     padding-left: 1rem;
-//     padding-right: 1rem;
-//     padding-bottom: 1rem;
-// }
-// }}
