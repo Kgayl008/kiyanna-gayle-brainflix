@@ -1,4 +1,5 @@
 import './App.css';
+import './App.scss';
 import Header from './components/HeaderSection/HeaderSection';
 import VideoList from './components/VideoList/VideoList';
 import Video from './components/Video/Video';
@@ -22,8 +23,10 @@ function App() {
     <div>
       <Header />
       <Video selectedVideo={selectedVideo} />
+      <div className='text'>
       <CommentSection selectedVideo={selectedVideo} />
       <VideoList clickHandler={videoClick} videos={filteredVideo}/>
+      </div>
     </div>
   );
 }

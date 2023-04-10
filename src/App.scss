@@ -1,0 +1,8 @@
+@use '../src/styles/partials/variables' as *;
+@use '../src/styles/partials/mixins' as *;
+
+.test{
+    @include desktop{
+    background-color: pink;
+    }
+}

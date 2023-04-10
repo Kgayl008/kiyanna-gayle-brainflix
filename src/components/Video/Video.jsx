@@ -5,8 +5,6 @@ import Views from '../../assets/Icons/views.svg';
 import Avatar from '../../assets/Images/Mohan-muruge.jpg';
 import CommentIcon from '../../assets/Icons/add_comment.svg';
 
-
-//accept array (filtered) and clickHandler function
 const Video = ({selectedVideo})=> {
     const {title, channel, timestamp, views, likes, description, image} = selectedVideo;
     return(

@@ -7,6 +7,9 @@
         @include tablet{
             height: 57vh
         }
+        @include desktop{
+            height: 92vh;
+        }
 }
 .hero__title{
     padding-top: 1.5rem;
