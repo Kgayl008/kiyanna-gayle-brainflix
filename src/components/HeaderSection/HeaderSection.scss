@@ -73,11 +73,17 @@
     position: absolute;
     left: 2%;
 }
+.icon__search{
+    position: absolute;
+    left: 3%;
+    bottom: 33%;
+}
 .nav__input{
     display: flex;
     justify-content: space-between;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    position: relative;
     @include tablet{
         padding: 0;
     }
@@ -101,6 +107,7 @@
     border: 1px solid $Mercury;
     border-radius: 4px;
     width: 81%;
+    padding-left: 2rem;
         @include tablet{
             height: 2.5rem;
             width: 12.5rem;

@@ -2,7 +2,7 @@ import './HeaderSection.scss';
 import BrainFlixLogo from '../../assets/Logo/BrainFlix-logo.svg';
 import AvatarImage from '../../assets/Images/Mohan-muruge.jpg';
 import UploadIcon from '../../assets/Icons/upload.svg';
-// import SearchIcon from '../../assets/Icons/search.svg';
+import SearchIcon from '../../assets/Icons/search.svg';
 
 const Header = () => {
     return(
@@ -12,7 +12,8 @@ const Header = () => {
             </div>
             <div className='new__nav'>
                 <div className='nav__input'>
-                    <input type="text" placeholder="Search" className='nav__search-bar'/>
+                    <img src={SearchIcon} alt="Search icon" className='icon__search'/>
+                    <input type="text" placeholder="Search" className='nav__search-bar' />
                     <img src={AvatarImage} alt="" className='nav__image'/>
                 </div>
                 <div>

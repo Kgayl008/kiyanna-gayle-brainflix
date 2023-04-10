@@ -1,4 +1,4 @@
-// import './App.css';
+import './App.css';
 import './App.scss';
 import Header from './components/HeaderSection/HeaderSection';
 import VideoList from './components/VideoList/VideoList';
@@ -27,7 +27,7 @@ function App() {
         <div className='section__comment'>
         <CommentSection selectedVideo={selectedVideo} />
         </div>
-        <VideoList clickHandler={videoClick} videos={filteredVideo} />
+        <VideoList clickHandler={videoClick} videos={filteredVideo}/>
       </div>
     </div>
   );
