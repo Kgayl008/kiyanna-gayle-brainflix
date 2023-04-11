@@ -7,8 +7,7 @@ import videoDetailsData from './data/video-details.json';
 import videos from './data/videos.json';
 import { useState } from 'react';
 import CommentSection from './components/CommentSection/CommentSection';
-
-//onClick={() => {handle}()}
+// import { BrowserRouter, Routes,Route } from 'react-router-dom';
 
 function App() {
 
