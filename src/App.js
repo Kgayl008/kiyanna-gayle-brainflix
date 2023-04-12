@@ -5,10 +5,11 @@ import VideoList from './components/VideoList/VideoList';
 import Video from './components/Video/Video';
 import videoDetailsData from './data/video-details.json';
 import videos from './data/videos.json';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import CommentSection from './components/CommentSection/CommentSection';
+// import Page from './pages/Pages/Page';
+// import {Route, Routes, Link, Navigate} from 'react-router-dom'
 
-//onClick={() => {handle}()}
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
         <CommentSection selectedVideo={selectedVideo} />
         </div>
         <VideoList clickHandler={videoClick} videos={filteredVideo}/>
+        {/* <Page /> */}
       </div>
     </div>
   );
