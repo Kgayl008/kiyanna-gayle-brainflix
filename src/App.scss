@@ -1,13 +1,13 @@
-@use '../src/styles/partials/variables' as *;
-@use '../src/styles/partials/mixins' as *;
+// @use '../src/styles/partials/variables' as *;
+// @use '../src/styles/partials/mixins' as *;
 
-.section{
-    @include desktop{
-    display: flex;
-    }
-}
-.section__comment{
-    @include desktop{
-        border-right: 1px solid $Mercury;
-    }
-}
+// .section{
+//     @include desktop{
+//     display: flex;
+//     }
+// }
+// .section__comment{
+//     @include desktop{
+//         border-right: 1px solid $Mercury;
+//     }
+// }
