@@ -3,9 +3,11 @@ import BrainFlixLogo from '../../assets/Logo/BrainFlix-logo.svg';
 import AvatarImage from '../../assets/Images/Mohan-muruge.jpg';
 import UploadIcon from '../../assets/Icons/upload.svg';
 import SearchIcon from '../../assets/Icons/search.svg';
+// import { Link} from 'react-router-dom'
 
 const Header = () => {
     return(
+        <>
         <nav className='nav__container'>
             <div className='nav__logo'>
                 <img src={BrainFlixLogo} alt="BrainFlix Logo"/>
@@ -27,6 +29,8 @@ const Header = () => {
                 </div>
             </div>
         </nav>
+        
+        </>
     )
 }
 
