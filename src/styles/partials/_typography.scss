@@ -1,9 +1,15 @@
 @font-face {
     font-family: 'Avenir';
-    src: url(../../assets/Font/AvenirNextLTPro-Regular.otf) format("opentype");
+    src: url(../../assets/Font/AvenirNextLTPro-Regular.otf) format("opentype"),
+    
 }
 
 @font-face {
     font-family: 'Avenir Bold';
-    src: url(../../assets/Font/AvenirNextLTPro-Bold.otf) format("opentype");
+    src: url(../../assets/Font/AvenirNextLTPro-Bold.otf) format("opentype")
 }
+
+
+// url(../../assets/Font/Alternative\ files/AvenirNextLTProBold.ttf) format("opentype")
+
+// url(../../assets/Font/Alternative\ files/AvenirNextLTPro.ttf) format("truetype")

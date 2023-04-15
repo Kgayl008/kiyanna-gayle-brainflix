@@ -92,6 +92,9 @@
     padding-top: .5rem;
     margin-bottom: 1rem;
     resize: none;
+    @include desktop{
+        margin-bottom: 0 !important;
+    }
 }
 .video-upload__textarea::placeholder{
     color: $BrainFlix-Black;
@@ -106,7 +109,7 @@
     @include tablet{
         display: flex;
         flex-direction: row-reverse;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
     }
 }
 .video-upload__btn{
@@ -162,5 +165,6 @@
 .section{
     @include desktop{
         border-bottom: $Mercury 1px solid;
+        padding-bottom: 1.5rem;
     }
 }
