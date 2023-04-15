@@ -3,7 +3,7 @@ import Video from '../../components/Video/Video'
 import CommentSection from "../../components/CommentSection/CommentSection";
 import '../Main/Main.scss';
 import videoDetailsData from '../../data/video-details.json';
-import videos from '../../data/videos.json';
+// import videos from '../../data/videos.json';
 import { useState } from 'react';
 
 function Main() {
@@ -14,7 +14,7 @@ function Main() {
     setSelectedVideo(foundVideo);
     }
 
-    const filteredVideo = videos.filter(videoList => videoList.id !== selectedVideo.id);
+    // const filteredVideo = videos.filter(videoList => videoList.id !== selectedVideo.id);
 
 
 return (
@@ -24,7 +24,8 @@ return (
         <div className="section__comment">
         <CommentSection selectedVideo={selectedVideo} />
         </div>
-        <VideoList clickHandler={videoClick} videos={filteredVideo}/>
+        <VideoList clickHandler={videoClick} />
+        {/* <VideoList clickHandler={videoClick} videos={filteredVideo}/> */}
         </div>
     </>
 );
