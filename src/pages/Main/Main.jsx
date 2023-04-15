@@ -5,6 +5,7 @@ import '../Main/Main.scss';
 import videoDetailsData from '../../data/video-details.json';
 // import videos from '../../data/videos.json';
 import { useState } from 'react';
+import VideoDescription from "../../components/VideoDescription/VideoDescription";
 
 function Main() {
     const [selectedVideo, setSelectedVideo] = useState(videoDetailsData[0])
@@ -22,6 +23,7 @@ return (
         <Video selectedVideo={selectedVideo} />
         <div className="section">
         <div className="section__comment">
+        <VideoDescription selectedVideo={selectedVideo} />
         <CommentSection selectedVideo={selectedVideo} />
         </div>
         <VideoList clickHandler={videoClick} />
