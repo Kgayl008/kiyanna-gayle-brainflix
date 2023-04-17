@@ -67,10 +67,9 @@
     background-color: $Alabaster;
     color: $BrainFlix-Black;
     padding-left: 1rem;
-}
-.video-upload__input:focus{
-    border: $BrainFlix-Blue 2px solid;
-}
+    &:focus{
+    border: $BrainFlix-Blue 2px solid !important;
+}}
 .video-upload__input::placeholder{
     color: $BrainFlix-Black;
     font-size: .8125rem;
@@ -97,6 +96,10 @@
         height: 7.25rem;
     }
 }
+.video-upload__textarea:focus{
+    border: $BrainFlix-Blue 2px solid;
+}
+
 .video-upload__textarea::placeholder{
     color: $BrainFlix-Black;
     font-size: .8125rem;
