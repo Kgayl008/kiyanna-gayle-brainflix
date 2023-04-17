@@ -2,7 +2,7 @@
 import './App.css';
 import './App.scss';
 import Header from './components/HeaderSection/HeaderSection';
-import Main from './pages/Main/Main.jsx';
+import Main from './pages/Main/Main.js';
 import VideoUpload from './pages/VideoUpload/VideoUpload';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import NotFound from './pages/NotFound/NotFound';
