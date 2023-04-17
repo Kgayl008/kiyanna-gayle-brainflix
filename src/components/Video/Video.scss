@@ -5,10 +5,14 @@
     height: 30vh;
     object-fit: cover;
         @include tablet{
-            height: 57vh
+            height: 57vh;
+            width: 90%;
+            display: block;
+            margin: auto;
         }
         @include desktop{
             height: 92vh;
+            width: 65%;
         }
     }
 .hero__background{
