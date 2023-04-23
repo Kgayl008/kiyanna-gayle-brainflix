@@ -9,15 +9,19 @@ const CommentSection = ({ selectedVideoId }) => {
   const [comment, setComment] = useState(null);
 
   useEffect(() => {
-      if(selectedVideoId === null){
-          return;
-      }
-      axios.get(`https://project-2-api.herokuapp.com/videos/${selectedVideoId}?api_key=010802ea-3a09-4be6-91bf-7e08b3540702`)
-          .then(response => {
-              console.log(response.data);
-              setComment(response.data);
-          })
-  }, [selectedVideoId])
+    if (selectedVideoId === null) {
+      return;
+    }
+    axios
+      .get(`https://project-2-api.herokuapp.com/videos/${selectedVideoId}?api_key=010802ea-3a09-4be6-91bf-7e08b3540702`)
+      .then(response => {
+        console.log(response.data);
+        setComment(response.data);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, [selectedVideoId]);
 
   if (!comment) {
       return <div>Loading...</div>;
