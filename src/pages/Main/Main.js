@@ -8,12 +8,12 @@ import axios from "axios";
 import { useParams } from 'react-router-dom';
 
 function Main() {
-    const {idFromParams} = useParams();
+    const { idFromParams } = useParams();
     const [selectedVideo, setSelectedVideo] = useState([]);
 
     let defaultVideoId = null;
 
-    if(selectedVideo.length > 0) {
+    if (selectedVideo.length > 0) {
         defaultVideoId = selectedVideo[0].id;
     }
 
@@ -22,15 +22,19 @@ function Main() {
     const filteredVideo = selectedVideo.filter(video => video.id !== videoIdToDisplay)
 
     useEffect(() => {
-        axios.get('https://project-2-api.herokuapp.com/videos?api_key=a1262fa0-3078-466e-a961-bfd24f06df57')
+        axios
+            .get('http://localhost:8080/videos')
             .then(response => {
                 console.log(response.data);
                 setSelectedVideo(response.data);
             })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
     }, []);
 
     const selectedVideoData = selectedVideo.find(video => video.id === videoIdToDisplay);
-    
+
     return (
         <>
             {selectedVideoData && <Video selectedVideo={selectedVideoData} />}
@@ -38,7 +42,7 @@ function Main() {
                 {selectedVideoData && (
                     <div className="section__comment">
                         <VideoDescription selectedVideoId={videoIdToDisplay} />
-                        <CommentSection comments={selectedVideoData.comments} selectedVideoId={videoIdToDisplay}/>
+                        <CommentSection comments={selectedVideoData.comments} selectedVideoId={videoIdToDisplay} />
                     </div>
                 )}
                 {selectedVideoData && <VideoList videos={filteredVideo} selectedVideoId={videoIdToDisplay} />}
