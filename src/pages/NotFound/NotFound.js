@@ -1,8 +1,9 @@
+import './NotFound.scss';
 
 function NotFound(){
     return (
         <div>
-            <h1>Oops! You seem to be lost.</h1>
+            <h1 className="notFound">Oops! You seem to be lost.</h1>
         </div>
     )
 }
