@@ -13,7 +13,7 @@ const CommentSection = ({ selectedVideoId }) => {
       return;
     }
     axios
-      .get(`https://project-2-api.herokuapp.com/videos/${selectedVideoId}?api_key=010802ea-3a09-4be6-91bf-7e08b3540702`)
+      .get(`http://localhost:8080/videos/${selectedVideoId}`)
       .then(response => {
         console.log(response.data);
         setComment(response.data);
@@ -81,3 +81,15 @@ const CommentSection = ({ selectedVideoId }) => {
 };
 
 export default CommentSection;
+
+// .get(`http://localhost:8080/videos/${selectedVideoId}`)
+//     .then(response => {
+//       console.log(response.data);
+//       setComment(response.data);
+//     })
+//     .catch(error => {
+//       console.error('Error fetching data:', error);
+//     });
+
+
+

@@ -2,9 +2,16 @@ import Thumbnail from "../../assets/Images/Upload-video-preview.jpg";
 import PublishIcon from "../../assets/Icons/publish.svg";
 import "./UploadVideoSection.scss";
 import { useNavigate } from "react-router-dom";
+// import { useEffect, useState } from "react";
+// import axios from "axios";
 
 const UploadVideoSection = () => {
     const navigate = useNavigate();
+
+    // const [uploadVideo, setuploadVideo] = useState({
+    //     name: '',
+    //     nickname: '',
+    //   });
 
     const click = () => {
         alert("Congratulation, your video has successfully uploaded!");

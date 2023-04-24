@@ -25,7 +25,6 @@ function Main() {
         axios
             .get('http://localhost:8080/videos')
             .then(response => {
-                console.log(response.data);
                 setSelectedVideo(response.data);
             })
             .catch(error => {
