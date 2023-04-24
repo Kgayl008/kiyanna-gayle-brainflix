@@ -15,7 +15,6 @@ const CommentSection = ({ selectedVideoId }) => {
     axios
       .get(`http://localhost:8080/videos/${selectedVideoId}`)
       .then(response => {
-        console.log(response.data);
         setComment(response.data);
       })
       .catch(error => {
